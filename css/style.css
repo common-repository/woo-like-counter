@@ -1,0 +1,52 @@
+.like-counter{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.like-counter .wl-counter{
+    float: right;
+}
+.like-counter .wl-counter .like_counter,.like-counter .wl-counter .unlike_counter{
+    background-color: #e0e0e0;
+    background-image: linear-gradient(to bottom, #fafafa 0px, #dcdcdc 100%);
+    border-color: #cccccc #cccccc #aaaaaa;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 1px #ffffff inset;
+    cursor: pointer;
+    
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 5px;
+    float: left;
+    position:relative;
+}
+.like-counter .wl-counter .like_counter .cnt-block,.like-counter .wl-counter .unlike_counter .cnt-block{
+    background: url('../images/like-unlike.png') no-repeat scroll;
+    padding-left: 20px;
+}
+.like-counter .wl-counter .like_counter .cnt-block{
+    background-position: 0 0;
+}
+.like-counter .wl-counter .unlike_counter .cnt-block{
+    background-position: 0 -20px;
+}
+.like-counter .wl-counter .like_counter:hover, .like-counter .wl-counter .unlike_counter:hover{
+    text-decoration: underline;
+}
+.like-counter .wl-counter .like_counter .res-message, .like-counter .wl-counter .unlike_counter .res-message{
+    background-color: #ffffff;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 3px #aaaaaa;
+    clear: both;
+    display: none;
+    height: 20px;
+    left: 0;
+    line-height: 18px;
+    padding: 1px 4px 1px 4px;
+    position: absolute;
+    top: 25px;
+    white-space: nowrap;
+}
